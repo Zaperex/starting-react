@@ -1,13 +1,13 @@
-import { Dispatch, SetStateAction, useContext } from "react";
+import { useContext } from "react";
 import { Pokemon } from "../types/types";
 import PokemonRow from "./PokemonRow";
 import PokemonContext from "../PokemonContext";
 
-interface tableProps {
-  pokemon: Pokemon[];
-  filter: string;
-  setSelectedPokemon: Dispatch<SetStateAction<null | Pokemon>>;
-}
+// interface tableProps {
+//   pokemon: Pokemon[];
+//   filter: string;
+//   setSelectedPokemon: Dispatch<SetStateAction<null | Pokemon>>;
+// }
 
 // const PokemonTable = ({ pokemon, filter, setSelectedPokemon }: tableProps) => {
 //   return (

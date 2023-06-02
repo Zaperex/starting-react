@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { Pokemon, PokemonStats } from "../types/types";
-import PropTypes from "prop-types";
+import { PokemonStats } from "../types/types";
+
 import PokemonContext from "../PokemonContext";
 import detailsContext from "../detailsContext";
 import { Button } from "@material-ui/core";

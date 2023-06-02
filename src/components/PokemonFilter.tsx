@@ -1,4 +1,4 @@
-import { useContext, Dispatch, SetStateAction } from "react";
+import { useContext } from "react";
 import PokemonContext from "../PokemonContext";
 
 // interface filterProps {
