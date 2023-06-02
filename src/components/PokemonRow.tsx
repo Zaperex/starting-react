@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Pokemon } from "../types/types";
 import { Button } from "@mui/material";
-import detailsContext from "../detailsContext";
+import detailsContext from "../PokemonContext";
 import { useContext } from "react";
 
 interface Props {
