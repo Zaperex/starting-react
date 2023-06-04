@@ -3,7 +3,7 @@ import { PokemonStats } from "../types/types";
 
 import PokemonContext from "../PokemonContext";
 import detailsContext from "../detailsContext";
-import { Button } from "@material-ui/core";
+import { Button } from "@mui/material";
 
 const PokemonInfo = () => {
   const { selectedPokemon } = useContext(PokemonContext);
