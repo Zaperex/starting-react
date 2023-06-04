@@ -36,7 +36,8 @@ jobs:
           node-version: 18
           cache: "npm"
       - name: Install dependencies
-        run: npm install @mui/material @emotion/react @emotion/styled  @mui/icons-material @mui/styled-engine-sc styled-components @fontsource/roboto && npm install
+        run: |
+          npm ci
       - name: Build
         run: npm run build
       - name: Setup Pages
