@@ -4,6 +4,7 @@ metadata:
   name: starting-react
   annotations:
     github.com/project-slug: Zaperex/starting-react
+    pagerduty.com/integration-key: test
 spec:
   type: other
   lifecycle: unknown
