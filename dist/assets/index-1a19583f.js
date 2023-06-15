@@ -13549,7 +13549,7 @@ function Mv() {
     [o, i] = $e.useState([]),
     [l, u] = $e.useState(!1);
   $e.useEffect(() => {
-    fetch("http://localhost:5173/starting-react/public/pokemon.json")
+    fetch("https://zaperex.github.io/starting-react/public/pokemon.json")
       .then((a) => a.json())
       .then((a) => i(a));
   }, []);
