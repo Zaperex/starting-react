@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-
+import pokemon from "./assets/pokemon.json";
 import { Pokemon } from "./types/types";
 
 import PokemonInfo from "./components/PokemonInfo";
@@ -21,18 +21,13 @@ function App() {
   const [selectedPokemon, setSelectedPokemon] = React.useState<Pokemon | null>(
     null
   );
-  const [pokemon, pokemonSet] = React.useState<Pokemon[]>([]);
+  const [pokemonList, pokemonListSet] = React.useState<Pokemon[]>(pokemon);
   const [detailsVisibility, detailsVisibilitySet] = React.useState(false);
   // React.useEffect(() => {
   //   fetch("http://localhost:5173/starting-react/public/pokemon.json")
   //     .then((resp) => resp.json())
   //     .then((data) => pokemonSet(data));
   // }, []);
-  React.useEffect(() => {
-    fetch("https://zaperex.github.io/starting-react/assets/pokemon.json")
-      .then((resp) => resp.json())
-      .then((data) => pokemonSet(data));
-  }, []);
 
   const toggleDetailsVisibility = (visibility: boolean) => {
     detailsVisibilitySet(visibility);
@@ -42,10 +37,10 @@ function App() {
       <PokemonContext.Provider
         value={{
           filter,
-          pokemon,
+          pokemon: pokemonList,
           selectedPokemon,
           setFilter,
-          pokemonSet,
+          pokemonSet: pokemonListSet,
           setSelectedPokemon,
         }}
       >
