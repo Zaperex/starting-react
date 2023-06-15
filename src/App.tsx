@@ -29,7 +29,7 @@ function App() {
   //     .then((data) => pokemonSet(data));
   // }, []);
   React.useEffect(() => {
-    fetch("https://zaperex.github.io/starting-react/public/pokemon.json")
+    fetch("https://zaperex.github.io/starting-react/assets/pokemon.json")
       .then((resp) => resp.json())
       .then((data) => pokemonSet(data));
   }, []);
