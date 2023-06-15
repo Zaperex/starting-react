@@ -23,8 +23,13 @@ function App() {
   );
   const [pokemon, pokemonSet] = React.useState<Pokemon[]>([]);
   const [detailsVisibility, detailsVisibilitySet] = React.useState(false);
+  // React.useEffect(() => {
+  //   fetch("http://localhost:5173/starting-react/public/pokemon.json")
+  //     .then((resp) => resp.json())
+  //     .then((data) => pokemonSet(data));
+  // }, []);
   React.useEffect(() => {
-    fetch("http://localhost:5173/starting-react/public/pokemon.json")
+    fetch("https://zaperex.github.io/starting-react/public/pokemon.json")
       .then((resp) => resp.json())
       .then((data) => pokemonSet(data));
   }, []);
