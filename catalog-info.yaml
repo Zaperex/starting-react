@@ -5,8 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: Zaperex/starting-react
     pagerduty.com/integration-key: 48ded51e33b34e06c0da3f8291e3c84f
-    dynatrace.com/dynatrace-entity-id: APPLICATION-C7C54B617ADF59B5
-    dynatrace.com/synthetics-ids: SYNTHETIC_TEST-00ACC8F1F7995D88
+    dynatrace.com/dynatrace-entity-id: APPLICATION-C7C54B617ADF59B5, SYNTHETIC_TEST-00ACC8F1F7995D88
 spec:
   type: website
   lifecycle: development
