@@ -8,5 +8,5 @@ metadata:
     dynatrace.com/dynatrace-entity-id: APPLICATION-C7C54B617ADF59B5
 spec:
   type: website
-  lifecycle: unknown
+  lifecycle: development
   owner: janus-authors
