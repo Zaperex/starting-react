@@ -7,8 +7,8 @@ metadata:
     pagerduty.com/integration-key: 48ded51e33b34e06c0da3f8291e3c84f
     # dynatrace.com/dynatrace-entity-id: APPLICATION-C7C54B617ADF59B5
     # dynatrace.com/dynatrace-entity-id: SYNTHETIC_TEST-00ACC8F1F7995D88
-    dynatrace.com/dynatrace-entity-id: KUBERNETES_CLUSTER-F3978655C7577B90
-    # dynatrace.com/dynatrace-entity-id: HOST-9BFBB10BB538D69D
+    # dynatrace.com/dynatrace-entity-id: KUBERNETES_CLUSTER-F3978655C7577B90
+    dynatrace.com/dynatrace-entity-id: HOST-9BFBB10BB538D69D
     dynatrace.com/synthetics-ids: SYNTHETIC_TEST-00ACC8F1F7995D88
     lighthouse.com/website-url: https://zaperex.github.io/starting-react/
 spec:
