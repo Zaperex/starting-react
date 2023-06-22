@@ -10,7 +10,7 @@ metadata:
     # dynatrace.com/dynatrace-entity-id: KUBERNETES_CLUSTER-F3978655C7577B90
     dynatrace.com/dynatrace-entity-id: HOST-9BFBB10BB538D69D
     dynatrace.com/synthetics-ids: SYNTHETIC_TEST-00ACC8F1F7995D88
-    lighthouse.com/website-url: ""
+    lighthouse.com/website-url: https://zaperex.github.io/starting-react
 spec:
   type: website
   lifecycle: development
