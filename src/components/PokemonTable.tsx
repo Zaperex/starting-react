@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import { Pokemon } from "../types/types";
 import PokemonRow from "./PokemonRow";
 import PokemonContext from "../PokemonContext";
@@ -37,6 +37,19 @@ import PokemonContext from "../PokemonContext";
 
 const PokemonTable = () => {
   const { pokemon, filter, setSelectedPokemon } = useContext(PokemonContext);
+  const filteredPokemon = useMemo(() => {
+    return pokemon
+      .filter((pokemon) =>
+        pokemon.name.english.toLowerCase().includes(filter.toLowerCase())
+      )
+      .map((pokemon: Pokemon) => (
+        <PokemonRow
+          pokemon={pokemon}
+          key={pokemon.id}
+          onSelect={(pokemon) => setSelectedPokemon(pokemon)}
+        />
+      ));
+  }, [filter, pokemon, setSelectedPokemon]);
   return (
     <table className="w-full">
       <thead>
@@ -45,19 +58,7 @@ const PokemonTable = () => {
           <th>Type(s)</th>
         </tr>
       </thead>
-      <tbody>
-        {pokemon
-          .filter((pokemon) =>
-            pokemon.name.english.toLowerCase().includes(filter.toLowerCase())
-          )
-          .map((pokemon: Pokemon) => (
-            <PokemonRow
-              pokemon={pokemon}
-              key={pokemon.id}
-              onSelect={(pokemon) => setSelectedPokemon(pokemon)}
-            />
-          ))}
-      </tbody>
+      <tbody>{filteredPokemon}</tbody>
     </table>
   );
 };
